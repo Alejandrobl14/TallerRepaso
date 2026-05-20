@@ -21,14 +21,14 @@ class Program
         if (pasajeros > 5 && destino.ToLower() == "cancún")
         {
             total = total - (total * 0.10); // descuento del 10%
-            Console.WriteLine("\nSe aplicó un descuento del 10%.");
+            Console.WriteLine("Se aplicó un descuento del 10%.");
         }
 
 
         Console.WriteLine("\n===== PRESUPUESTO DEL VIAJE =====");
         Console.WriteLine("Destino: " + destino);
-        Console.WriteLine("Número de pasajeros: " + pasajeros);
-        Console.WriteLine("Costo por persona: $" + costoPersona);
-        Console.WriteLine("Total actualizado: $" + total);
+        Console.WriteLine("Número de pasajeros: " + pasajeros + COP);
+        Console.WriteLine("Costo por persona: $" + costoPersona + COP);
+        Console.WriteLine("Total actualizado: $" + total + COP);
     }
 }
